@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="1009.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ai_searchs.FXMLGenerateController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" blendMode="MULTIPLY" cache="true" cacheHint="DEFAULT" depthTest="DISABLE" disable="false" fillHeight="true" mouseTransparent="false" prefHeight="446.0" prefWidth="992.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-59.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ScrollPane id="ScrollPane" fx:id="mainPane" content="$null" pannable="false" prefHeight="446.0" prefViewportHeight="400.0" prefViewportWidth="363.0" prefWidth="354.0" />
+        <VBox id="VBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#IDSSOlve" text="IDS" />
+            <ListView id="moveList" fx:id="moveListids" prefHeight="195.0" prefWidth="186.0" />
+            <VBox id="VBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#AStarSOlve" text="A*" />
+                <ListView id="moveList" fx:id="moveLista" prefHeight="400.0" prefWidth="117.0" />
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+        <VBox id="VBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#DFSSOlve" text="DFS" />
+            <ListView id="moveList" fx:id="moveListdfs" prefHeight="400.0" prefWidth="174.0" />
+          </children>
+        </VBox>
+        <VBox id="VBox" alignment="CENTER" prefHeight="446.0" prefWidth="156.0" spacing="5.0">
+          <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#IDAStarSOlve" text="IDA*" />
+            <ListView id="moveList" fx:id="moveListida" prefHeight="400.0" prefWidth="117.0" />
+            <VBox id="VBox" alignment="CENTER" prefHeight="446.0" prefWidth="70.0" spacing="5.0">
+              <children>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#BFSSOlve" prefWidth="92.0" text="BFS" />
+                <ListView id="moveList" fx:id="moveListbfs" prefHeight="386.0" prefWidth="200.0" />
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+        <Button mnemonicParsing="false" onAction="#Play" text="Move Queen" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
